@@ -15,6 +15,11 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
 
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <title>Frontend Mentor | Huddle landing page with curved sections</title>
@@ -31,119 +36,166 @@
     </style>
   </head>
   <body>
+   
     <div class="container">
-      <div class="header-section">
+       <div class="header-section">
         <img src="./images/logo.svg" alt="logo" />
-        <button class="btn btn-white">Try it free</button>
+        <button class="btn btn--white">Try it free</button>
       </div>
-      <div class="section">
+      <div class="section-1-col">
         <h1>Build The Community Your Fans Will Love</h1>
-        <p>
+        <span class="narrow">
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
-        </p>
-        <button class="btn btn-primary">Get Started For Free</button>
+        </span>
+        <button class="btn btn--primary">Get Started For Free</button>
       </div>
-      <div class="section">
-        <img src="./images/screen-mockups.svg" alt="screen mockups" />
-      </div>
-      <div class="section-2-col">
+
+      <img class="section-1-col big-img" src="./images/screen-mockups.svg" alt="screen mockups" />
+   
+      <div class="section-2-col center">
         <div class="col">
           <img src="./images/icon-communities.svg" alt="communities icon" />
-          <h1>1.4k+</h1>
-          <p>Communities Formed</p>
+          <div class=big-bold-font>1.4k+</div>
+          <span class="">Communities Formed</span>
         </div>
         <div class="col">
           <img src="./images/icon-messages.svg" alt="messages icon" />
-          <h1>2.7m+</h1>
-          <p>Messages Sent</p>
+          <div class=big-bold-font>2.7m+</div>
+          <span class="">Messages Sent</span>
         </div>
       </div>
-      <div class="section">
-        <div class="col">
-          <h1>Grow Together</h1>
-          <p>
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-          </p>
-        </div>
-        <div class="col">
-          <img
-            src="./images/illustration-grow-together.svg"
-            alt="growing together"
-          />
+          
+       
+      <div class="full-width">
+        <img class="bg-image big-img  desktop" src="../images/bg-section-top-desktop-1.svg" alt="">
+        <img class="bg-image big-img  mobile" src="../images/bg-section-top-mobile-1.svg" alt="">
+      
+        <div class="section-1-col-gap-0 background-blue">
+          <div class="section-2-col background-blue">
+          
+          <div class="col col-1 left mobile-center">
+            <h2 >Grow Together</h2>
+            <span class="">
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </span>
+          </div>
+          <div class="col col-2">
+            <img
+              class="big-img"
+              src="./images/illustration-grow-together.svg"
+              alt="growing together"
+            />
+          </div>
         </div>
       </div>
-      <div class="section">
+      
+        <img class="bg-image big-img  desktop" src="../images/bg-section-bottom-desktop-1.svg" alt="">
+        <img class="bg-image big-img  mobile" src="../images/bg-section-bottom-mobile-1.svg" alt="">
+      </div>
+
+
+      <div class="section-2-col">
         <div class="col">
           <img
+            class="big-img"
             src="./images/illustration-flowing-conversation.svg"
             alt="flowing conversation"
           />
         </div>
-        <div class="col">
-          <h1>Flowing Conversations</h1>
-          <p>
+        <div class="col left mobile-center">
+          <h2>Flowing Conversations</h2>
+          <span class="">
             You wouldn't paginate a conversation in real life, so why do it
             online? Our threads have just-in-time loading for a more natural
             flow.
-          </p>
+          </span>
         </div>
       </div>
-      <div class="section">
-        <div class="col">
-          <h1>Your Users</h1>
-          <p>
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-          </p>
+     
+      <div class="full-width">
+     
+        <img class="bg-image big-img  desktop" src="../images/bg-section-top-desktop-2.svg" alt="">
+        <img class="bg-image big-img  mobile" src="../images/bg-section-top-mobile-2.svg" alt="">
+        <div class="section-1-col-gap-0 background-blue">
+          <div class="section-2-col background-blue">
+            <div class="col col-1 left mobile-center">
+              <h2>Your Users</h2>
+              <span class="">
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+              </span>
+            </div>
+            <div class="col col-2">
+              <img
+              class="big-img"
+              src="./images/illustration-your-users.svg"
+              alt="your users"
+              />
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <img src="./images/illustration-your-users.svg" alt="your users" />
-        </div>
+        <img class="bg-image   desktop" src="../images/bg-section-bottom-desktop-2.svg" alt="">
+        <img class="bg-image  mobile" src="../images/bg-section-bottom-mobile-2.svg" alt="">
+        
+        
       </div>
-      <div class="section">
-        <h1>Ready To Build Your Community?</h1>
-        <button class="btn btn-primary">Get Started For Free</button>
-      </div>
-      <div class="section">
-        <div class="col">
-          <img src="./images/logo.svg" alt="logo" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
-          </p>
-          <div class="side-by-side">
-            <img src="./images/icon-phone.svg" alt="" />
-            <p>Phone: +1-543-123-4567</p>
-          </div>
-          <div class="side-by-side">
-            <img src="./images/icon-email.svg" alt="" />
-            <p>example@huddle.com</p>
-          </div>
-          <div class="side-by-side">
-            <img src="facebook" alt="facebook" />
-            <img src="instagram" alt="instagram" />
-            <img src="twitter" alt="twitter" />
-          </div>
-        </div>
-        <div class="col">
-          <h2>Newsletter</h2>
-          <p>
-            To recieve tips on how to grow your community, sign up to our weekly
-            newsletter. We’ll never send you spam or pass on your email address
-          </p>
-          <div class="side-by-side">
-            <input type="text" class="subscribe" />
-            <button class="btn btn-primary btn-square">Subscribe</button>
-          </div>
-        </div>
-      </div>
+      
 
-      <div class="section footer">
+      <div class="section-1-col center">
+        <h2>Ready To Build Your Community?</h2>
+        <button class="btn btn--primary">Get Started For Free</button>
+      </div> 
+
+
+      <div class="full-width footer">
+        <img class="bg-image  desktop" src="../images/bg-footer-top-desktop.svg" alt="">
+        <img class="bg-image  mobile" src="../images/bg-footer-top-mobile.svg" alt="">
+      
+        <div class="section-1-col-gap-0 black">
+        <div class="section-2-col left black">
+          <div class="col col-1 left">
+            <img src="../images/logo-white.svg" alt="">
+
+          
+            <div class="">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+            </div>
+            <div class="side-by-side">
+              <img src="./images/icon-phone.svg" alt="" />
+              <span>Phone: +1-543-123-4567</span>
+            </div>
+            <div class="side-by-side">
+              <img src="./images/icon-email.svg" alt="" />
+              <span>example@huddle.com</span>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+          </div>
+          <div class="col col-2">
+            <div class="news-letter">Newsletter</div>
+            <span class=" narrow"> 
+              To recieve tips on how to grow your community, sign up to our weekly
+              newsletter. We’ll never send you spam or pass on your email address
+            </span>
+            <div class="side-by-side footer-cta">
+              <input type="text" class="subscribe" />
+              <button class="btn btn--primary btn--sqr">Subscribe</button>
+            </div>
+          </div>
+      </div>
+      </div>
+      </div>
+    
+      <div class="section-1-col footer">
         <footer>
           <p class="attribution">
             Challenge by
@@ -151,8 +203,8 @@
               href="https://www.frontendmentor.io?ref=challenge"
               target="_blank"
               >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
-          </p>
+            >. Coded by <a href="https://c-healey.com">C Healey</a>.
+          </span>
         </footer>
       </div>
     </div>
