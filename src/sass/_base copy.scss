@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:700&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+
+// - Pink: hsl(322, 100%, 66%)
+
+// ### Neutral
+
+// - Very Dark Cyan: hsl(192, 100%, 9%)
+// - Very Pale Blue: hsl(207, 100%, 98%)
+
+// ## Typography
+
+// ### Headings
+
+// - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+// - Weights: 700
+
+// ### Body
+
+// - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+// - Weights: 400, 600, 700
+
+// ## Icons
+
+// For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+// - [Font Awesome](https://fontawesome.com/)
+// - [IcoMoon](https://icomoon.io/)
+// - [Ionicons](https://ionicons.com/)
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem  = 9px; 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1rem  = 8px; 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem  = 12px; 12/16 = 75%
+  }
+}
+:root {
+  --primary: hsl(322, 100%, 66%);
+
+  // ### Neutral
+
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+  --default-font-size: 400;
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  // padding: 3rem;
+  margin: 0;
+
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  // font-family: "Open Sans";
+  font-size: 2rem;
+  color: rgba(var(--very-dark-cyan), 0.6);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  color: var(--very-dark-cyan), 0.6;
+  opacity: 1;
+}
+h1 {
+  font-size: 4.5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+
+// .p-text-lrg {
+//   font-size: 2rem;
+// }
+.width-60 {
+  width: 60%;
+}
+.big-bold-font {
+  font-size: 10rem;
+  font-weight: 700;
+}
+
+.container {
+  position: relative;
+  margin: 0;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-rows: auto;
+
+  grid-template-columns:
+    1fr minmax(2rem, 1fr)
+    minmax(min-content, 144rem)
+    minmax(2rem, 1fr) 1fr;
+
+  grid-gap: 4rem 4rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+}
+// .container {
+//   position: relative;
+//   margin: 2.5rem 2rem;
+
+//   display: flex;
+//   flex-direction: column;
+//   justify-items: center;
+//   align-items: center;
+//   justify-content: center;
+// }
+.header-section,
+.section-1-col,
+.section-2-col,
+.col {
+  display: grid;
+  align-items: center;
+}
+.header-section,
+.section-1-col,
+.section-2-col {
+  grid-gap: 3rem 4rem;
+}
+.col {
+  grid-gap: 2rem;
+}
+.header-section {
+  grid-column: 2 / span 3;
+  grid-template-columns: 1fr max-content;
+  padding-bottom: 18rem;
+}
+.section-1-col,
+.section-2-col {
+  grid-column: 3 / span 1;
+}
+.grow-together {
+  .col-1 {
+    grid-gap: 2rem;
+  }
+}
+.center {
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+.left {
+  justify-items: flex-start;
+}
+.section-1-col,
+.col {
+  grid-template-columns: 1fr;
+}
+.section-2-col {
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+.side-by-side {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+}
+.black {
+  background-color: var(--very-dark-cyan);
+  color: white;
+}
+
+.big-img {
+  width: 100%;
+}
+
+.icon-logo {
+  mask: url(http://localhost:8080/images/logo.svg);
+  width: 240px;
+  height: 39px;
+}
+.icon {
+  display: inline-block;
+
+  background: white;
+  // mask-size: cover;
+}
+.full-width {
+  grid-column: 1/-1;
+  background: white;
+  // margin: 0 2rem;
+}
+.background-blue {
+  background-color: var(--very-pale-blue);
+}
+.margin-down-10 {
+  margin-bottom: -7rem;
+  width: 100%;
+}
+.mobile {
+  display: none;
+}
+
+@include respond(phone) {
+  .section-1-col,
+  .section-2-col {
+    grid-template-columns: 1fr;
+  }
+  // .header-section,
+  // .section-1-col,
+  // .section-2-col {
+  //   grid-column: 1/-1;
+  // }
+
+  .col-1 {
+    grid-row: 2;
+  }
+  .col-2 {
+    grid-row: 1;
+  }
+
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile-center {
+    justify-items: center;
+    text-align: center;
+  }
+  .footer-cta {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: flex-end;
+  }
+}
+.social i {
+  font-size: 3rem;
+  color: white;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+.subscribe {
+  width: 35rem;
+  border-radius: 1rem;
+  font-size: 3.5rem;
+  padding: 1rem;
+}
